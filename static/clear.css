@@ -35,7 +35,6 @@ li{list-style: none;}
 .mb-10{margin-bottom:10px;}
 .hide{display: none;}
 body {
-    overflow: hidden;
     font: 12px/1.5 "ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei",sans-serif, helvetica, arial, verdana, tahoma, sans-serif !important;
 }
 
@@ -89,6 +88,9 @@ body {
 
 .scroll::-webkit-scrollbar {width: 10px;height: 1px;}
 .scroll::-webkit-scrollbar-thumb {background: rgba(0,0,0,0.1);border-radius: 4px;}
+
+.ivu-select-dropdown::-webkit-scrollbar {width: 10px;height: 1px;}
+.ivu-select-dropdown::-webkit-scrollbar-thumb {background: rgba(0,0,0,0.1);border-radius: 4px;}
 
 .flex-display{ display: flex; display: -webkit-flex; display: -ms-flex; display: -o-flex; flex-wrap: wrap}
 .flex-display-nowrap{display: flex; display: -webkit-flex; display: -ms-flex; display: -o-flex; flex-wrap: nowrap;}
