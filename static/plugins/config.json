@@ -204,11 +204,53 @@
                     "row":{
                         "type":"number",
                         "text":"显示行数",
-                        "default":0
+                        "default":10
                     },
+                    "slevel":{
+                        "type":"bool",
+                        "text":"等级",
+                        "default":true
+                    }
+                }
+            },
+            "_00":{
+                "child":{
                     "silver":{
                         "type":"bool",
                         "text":"银瓜子",
+                        "default":true
+                    },
+                    "gold":{
+                        "type":"bool",
+                        "text":"金瓜子",
+                        "default":true
+                    }
+                }
+            },
+            "_000":{
+                "child":{
+                    "ly":{
+                        "type":"bool",
+                        "text":"姥爷提示",
+                        "default":true
+                    },
+                    "jz":{
+                        "type":"bool",
+                        "text":"舰长提示",
+                        "default":true
+                    }
+                }
+            },
+            "_0000":{
+                "child":{
+                    "dm":{
+                        "type":"bool",
+                        "text":"发言",
+                        "default":true
+                    },
+                    "label":{
+                        "type":"bool",
+                        "text":"牌子",
                         "default":true
                     }
                 }
@@ -237,7 +279,7 @@
                     "height":{
                         "type":"number",
                         "text":"框高度",
-                        "default":500
+                        "default":380
                     }
                 }
             },
@@ -259,11 +301,11 @@
         }
     },
     {
-        "name":"index2",
-        "path":"bilibili/",
-        "text":"B站弹幕-纯发言",
+        "name":"index",
+        "path":"douyu/",
+        "text":"斗鱼弹幕-混合",
         "size":{"w":400},
-        "preview":"bilibili2.png",
+        "preview":"douyu.png",
         "params":{
             "rid":{
                 "type":"text",
@@ -277,13 +319,56 @@
                         "text":"显示行数",
                         "default":10
                     },
+                    "slevel":{
+                        "type":"bool",
+                        "text":"等级",
+                        "default":true
+                    }
+                }
+            },
+            "_0000":{
+                "child":{
+                    "dm":{
+                        "type":"bool",
+                        "text":"发言",
+                        "default":true
+                    },
+                    "label":{
+                        "type":"bool",
+                        "text":"牌子",
+                        "default":true
+                    }
+                }
+            },
+            "_1":{
+                "child":{
                     "level":{
                         "type":"number",
                         "text":"发言等级",
                         "default":0
+                    },
+                    "price":{
+                        "type":"number",
+                        "text":"礼物价格",
+                        "default":0
                     }
                 }
             },
+            "_11":{
+                "child":{
+                    "lw":{
+                        "type":"bool",
+                        "text":"礼物提醒",
+                        "default":true
+                    },
+                    "jf":{
+                        "type":"bool",
+                        "text":"进房提醒",
+                        "default":true
+                    }
+                }
+            },
+            
             "_2":{
                 "child":{
                     "width":{
@@ -294,26 +379,17 @@
                     "height":{
                         "type":"number",
                         "text":"框高度",
-                        "default":360
-                    }
-                }
-            },
-            "_4":{
-                "child":{
-                    "color1":{
-                        "type":"color",
-                        "text":"颜色1",
-                        "default":"f00"
-                    },
-                    "color2":{
-                        "type":"color",
-                        "text":"颜色2",
-                        "default":"ff0"
+                        "default":380
                     }
                 }
             },
             "_3":{
                 "child":{
+                    "bcolor":{
+                        "type":"color",
+                        "text":"边框色",
+                        "default":"#fff"
+                    },
                     "opacity":{
                         "type":"number",
                         "text":"透明度",
